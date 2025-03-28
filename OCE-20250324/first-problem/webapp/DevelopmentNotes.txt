@@ -1,0 +1,4 @@
+Running the Quick SQL Script raised a problem with P5_hired_date saving data as varchar while the component used being a Date Picker, so considering the expressed desire to not change the Data Schema as per request, this solution was developed on file f254004.sql (Solution 1).
+
+Considering a possible optimal solution, I ran the install.sql file you provided on OCE-20250324 folder which already had the hire_date being created as DATE and allowed for a faster and more stable solution since no there was no need to add a dynamic action. Only required to change the P5_Hire_Date data type to Date instead of Time Stamp With Local Zone. This solution was developed on file f256097.sql (Solution 2).
+
